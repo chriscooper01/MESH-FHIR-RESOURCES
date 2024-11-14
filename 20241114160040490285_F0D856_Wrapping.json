@@ -1,0 +1,304 @@
+{
+    "resourceType": "Bundle",
+    "id": "1e586e27-9fa4-4843-8525-5c0c644b48bf",
+    "meta": {
+        "versionId": "1.2.0",
+        "lastUpdated": "2024-11-14T15:59:36.9758341+00:00",
+        "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"
+        ]
+    },
+    "identifier": {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "urn:uuid:e3c68cec-db14-4574-940f-ed810fce1844"
+    },
+    "type": "message",
+    "timestamp": "2024-11-14T15:59:36.9758401+00:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:90bc2114-3645-4c2c-9f49-46ee0cb17fcd",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "90bc2114-3645-4c2c-9f49-46ee0cb17fcd",
+                "meta": {
+                    "lastUpdated": "2024-11-14T15:59:36.9755792+00:00",
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "InfAckRequested",
+                        "valueBoolean": true
+                    },
+                    {
+                        "url": "RecipientType",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1",
+                                    "code": "FI",
+                                    "display": "For Information"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "eventCoding": {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2",
+                    "code": "ITK006D",
+                    "display": "ITK Outpatient Letter"
+                },
+                "sender": {
+                    "reference": "urn:uuid:f5c0e35d-7d55-42c3-8d48-23a5af2ea9fd"
+                },
+                "source": {
+                    "endpointString": "urn:nhs-uk:addressing:ods:8K653"
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:f5c0e35d-7d55-42c3-8d48-23a5af2ea9fd",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "f5c0e35d-7d55-42c3-8d48-23a5af2ea9fd",
+                "meta": {
+                    "lastUpdated": "2024-11-14T15:59:36.9752598+00:00",
+                    "profile": [
+                        "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+                    ]
+                },
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "MOUSE",
+                        "given": [
+                            "Mickey"
+                        ],
+                        "prefix": [
+                            "Mr"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "Test@test.com"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:bb1ffb4d-a895-4536-8101-4575364d536e",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "bb1ffb4d-a895-4536-8101-4575364d536e",
+                "meta": {
+                    "lastUpdated": "2024-11-14T15:59:36.9752923+00:00",
+                    "profile": [
+                        "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+                    ]
+                },
+                "name": "LungHealth",
+                "contact": [
+                    {
+                        "telecom": [
+                            {
+                                "system": "email",
+                                "value": "Test@test.com"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "898f5961-fd5c-4c6e-a24e-b47058db135c",
+            "resource": {
+                "resourceType": "Bundle",
+                "id": "898f5961-fd5c-4c6e-a24e-b47058db135c",
+                "meta": {
+                    "lastUpdated": "2024-11-14T15:59:36.6297067+00:00",
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1"
+                    ]
+                },
+                "identifier": {
+                    "system": "https://tools.ietf.org/html/rfc4122",
+                    "value": "urn:uuid:f538aa6e-3dbb-4b8a-8048-b65b2f0ad68d"
+                },
+                "type": "document",
+                "timestamp": "2024-11-14T15:59:36.6305759+00:00",
+                "entry": [
+                    {
+                        "fullUrl": "urn:uuid:70216d47-7ee1-4e4f-a884-a64b0914fd5f",
+                        "resource": {
+                            "resourceType": "Composition",
+                            "id": "70216d47-7ee1-4e4f-a884-a64b0914fd5f",
+                            "meta": {
+                                "lastUpdated": "2024-11-14T15:59:36.6587451+00:00",
+                                "profile": [
+                                    "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1"
+                                ]
+                            },
+                            "identifier": [
+                                {
+                                    "system": "https://tools.ietf.org/html/rfc4122",
+                                    "value": "urn:uuid:73d64c4b-1be5-40d0-a53c-6fc8455e532d"
+                                }
+                            ],
+                            "status": "final",
+                            "type": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "185004005",
+                                        "display": "Medical report received"
+                                    }
+                                ]
+                            },
+                            "subject": [
+                                {
+                                    "reference": "urn:uuid:33f419f2-f928-4f49-96c9-c45f9cf18385",
+                                    "display": "Medical"
+                                }
+                            ],
+                            "date": "2024-11-14",
+                            "author": [
+                                {
+                                    "reference": "urn:uuid:e4b133fa-5946-45fc-8916-fcde3d96aba9"
+                                }
+                            ],
+                            "title": "ECG Report",
+                            "custodian": {
+                                "reference": "urn:uuid:cbe415bc-b3c7-417d-8bd0-78a93b871b4a"
+                            },
+                            "section": [
+                                {
+                                    "title": "ECG Report",
+                                    "code": {
+                                        "coding": [
+                                            {
+                                                "system": "http://snomed.info/sct",
+                                                "code": "185004005",
+                                                "display": "Medical report received"
+                                            }
+                                        ]
+                                    },
+                                    "text": {
+                                        "status": "generated",
+                                        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\t\t\t\t\t\t<table width=\"100%\">\r\n\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t<th>Reason for admission</th>\r\n\t\t\t\t\t\t\t\t\t\t<td>ECG: inferior ischaemia</td>\r\n\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t<th>Admission method</th>\r\n\t\t\t\t\t\t\t\t\t\t<td>Accident and emergency or dental casualty department of the Health Care Provider</td>\r\n\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t<th>Source of admission</th>\r\n\t\t\t\t\t\t\t\t\t\t<td>NHS other Hospital Provider - Ward for general Patients or the younger physically disabled or A and E department</td>\r\n\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t<th>Date/time of admission</th>\r\n\t\t\t\t\t\t\t\t\t\t<td>12-Feb-2015 09:00</td>\r\n\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t</div>"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:33f419f2-f928-4f49-96c9-c45f9cf18385",
+                        "resource": {
+                            "resourceType": "Patient",
+                            "id": "33f419f2-f928-4f49-96c9-c45f9cf18385",
+                            "meta": {
+                                "versionId": "00001",
+                                "profile": [
+                                    "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1"
+                                ]
+                            },
+                            "identifier": [
+                                {
+                                    "use": "official",
+                                    "system": "https://fhir.nhs.uk/Id/nhs-number",
+                                    "value": "9990102783"
+                                },
+                                {
+                                    "system": "https://fhir.nhs.uk/Id/local-patient-identifier",
+                                    "value": "1"
+                                }
+                            ],
+                            "name": [
+                                {
+                                    "use": "official",
+                                    "family": "MOUSE",
+                                    "given": [
+                                        "Mickey"
+                                    ],
+                                    "prefix": [
+                                        "Mr"
+                                    ]
+                                }
+                            ],
+                            "telecom": [
+                                {
+                                    "system": "email",
+                                    "value": "Test@test.com"
+                                }
+                            ],
+                            "gender": "male",
+                            "birthDate": "1974-02-12",
+                            "address": [
+                                {
+                                    "postalCode": "SR4 6NB"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:e4b133fa-5946-45fc-8916-fcde3d96aba9",
+                        "resource": {
+                            "resourceType": "Practitioner",
+                            "id": "e4b133fa-5946-45fc-8916-fcde3d96aba9",
+                            "meta": {
+                                "lastUpdated": "2024-11-14T15:59:36.6570948+00:00",
+                                "profile": [
+                                    "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+                                ]
+                            },
+                            "name": [
+                                {
+                                    "use": "official",
+                                    "family": "MOUSE",
+                                    "given": [
+                                        "Mickey"
+                                    ],
+                                    "prefix": [
+                                        "Mr"
+                                    ]
+                                }
+                            ],
+                            "telecom": [
+                                {
+                                    "system": "email",
+                                    "value": "Test@test.com"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "fullUrl": "urn:uuid:cbe415bc-b3c7-417d-8bd0-78a93b871b4a",
+                        "resource": {
+                            "resourceType": "Organization",
+                            "id": "cbe415bc-b3c7-417d-8bd0-78a93b871b4a",
+                            "meta": {
+                                "lastUpdated": "2024-11-14T15:59:36.6574861+00:00",
+                                "profile": [
+                                    "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+                                ]
+                            },
+                            "name": "LungHealth",
+                            "contact": [
+                                {
+                                    "telecom": [
+                                        {
+                                            "system": "email",
+                                            "value": "Test@test.com"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

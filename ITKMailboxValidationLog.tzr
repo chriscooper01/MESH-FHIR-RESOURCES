@@ -1,0 +1,44 @@
+Incoming request filename: 20241115152855258342_9A1590.ctl
+Transmission date and time (inferred from the file creation date): 2024-11-15T15:28:57.895866Z
+Transmission sender: 8K653OT001
+Transmission destination: X26OT112
+Control File: /home/service/MESH/X26OT112/IN/20241115152855258342_9A1590.ctl
+
+<DTSControl>
+  <Version>1.0</Version>
+  <AddressType>ALL</AddressType>
+  <MessageType>Data</MessageType>
+  <From_DTS>8K653OT001</From_DTS>
+  <To_DTS>X26OT112</To_DTS>
+  <From_ESMTP>8k653ot001@dts.nhs.uk</From_ESMTP>
+  <To_ESMTP>x26ot112@dts.nhs.uk</To_ESMTP>
+  <Subject>Patient Report Sent by LungHealth on behalf of Everton</Subject>
+  <LocalId>1203</LocalId>
+  <DTSId>20241115152855258342_9A1590</DTSId>
+  <PartnerId></PartnerId>
+  <Compress>N</Compress>
+  <Encrypted>N</Encrypted>
+  <WorkflowId>TOC_FHIR_OP_ATTEN</WorkflowId>
+  <ProcessId></ProcessId>
+  <DataChecksum></DataChecksum>
+  <IsCompressed>N</IsCompressed>
+  <StatusRecord>
+    <DateTime>20241115152855</DateTime>
+    <Event>TRANSFER</Event>
+    <Status>SUCCESS</Status>
+    <StatusCode>00</StatusCode>
+    <Description>Transferred to recipient mailbox</Description>
+  </StatusRecord>
+</DTSControl>
+
+Data File: /home/service/MESH/X26OT112/IN/20241115152855258342_9A1590.dat
+
+<Bundle xmlns="http://hl7.org/fhir"><id value="b63282f2-f001-446e-b1e3-e4635ce77571" /><meta><lastUpdated value="2024-11-15T15:27:51.204581+00:00" /><profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1" /></meta><identifier><system value="https://tools.ietf.org/html/rfc4122" /><value value="urn:uuid:a9fd9d3f-d8ee-4428-8478-466718ade198" /></identifier><type value="document" /><timestamp value="2024-11-15T15:27:51.205354+00:00" /><entry><fullUrl value="urn:uuid:339198e0-0ed4-4723-9488-3e39e27ccf49" /><resource><Composition><id value="339198e0-0ed4-4723-9488-3e39e27ccf49" /><meta><lastUpdated value="2024-11-15T15:27:51.2365257+00:00" /><profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-EDIS-Composition-1" /></meta><identifier><system value="https://tools.ietf.org/html/rfc4122" /><value value="urn:uuid:99e4865b-1f46-4cc9-b6d7-c95774fa96e1" /></identifier><status value="final" /><type><coding><system value="http://snomed.info/sct" /><code value="185004005" /><display value="Medical report received" /></coding></type><subject><reference value="urn:uuid:2f6eee92-35f5-4963-94a5-8d5a9997fc78" /><display value="Medical" /></subject><date value="2024-11-15" /><author><reference value="urn:uuid:e42d03ed-48f2-4f84-9db4-d69c41bbec4b" /></author><title value="ECG Report" /><custodian><reference value="urn:uuid:ffd292ee-6a66-4676-8793-28617de58aa6" /></custodian><section><title value="ECG Report" /><code><coding><system value="http://snomed.info/sct" /><code value="185004005" /><display value="Medical report received" /></coding></code><text><status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml"><table width="100%"><tbody><tr><th>Reason for admission</th><td>ECG: inferior ischaemia</td></tr><tr><th>Admission method</th><td>Accident and emergency or dental casualty department of the Health Care Provider</td></tr><tr><th>Source of admission</th><td>NHS other Hospital Provider - Ward for general Patients or the younger physically disabled or A and E department</td></tr><tr><th>Date/time of admission</th><td>12-Feb-2015 09:00</td></tr></tbody></table></div></text></section></Composition></resource></entry><entry><fullUrl value="urn:uuid:2f6eee92-35f5-4963-94a5-8d5a9997fc78" /><resource><Patient><id value="2f6eee92-35f5-4963-94a5-8d5a9997fc78" /><meta><versionId value="00001" /><profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Patient-1" /></meta><identifier><use value="official" /><system value="https://fhir.nhs.uk/Id/nhs-number" /><value value="9990102783" /></identifier><identifier><system value="https://fhir.nhs.uk/Id/local-patient-identifier" /><value value="1" /></identifier><name><use value="official" /><family value="MOUSE" /><given value="Mickey" /><prefix value="Mr" /></name><telecom><system value="email" /><value value="Test@test.com" /></telecom><gender value="male" /><birthDate value="1974-02-12" /><address><postalCode value="SR4 6NB" /></address></Patient></resource></entry><entry><fullUrl value="urn:uuid:e42d03ed-48f2-4f84-9db4-d69c41bbec4b" /><resource><Practitioner><id value="e42d03ed-48f2-4f84-9db4-d69c41bbec4b" /><meta><lastUpdated value="2024-11-15T15:27:51.2336875+00:00" /><profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1" /></meta><name><use value="official" /><family value="MOUSE" /><given value="Mickey" /><prefix value="Mr" /></name><telecom><system value="email" /><value value="Test@test.com" /></telecom></Practitioner></resource></entry><entry><fullUrl value="urn:uuid:ffd292ee-6a66-4676-8793-28617de58aa6" /><resource><Organization><id value="ffd292ee-6a66-4676-8793-28617de58aa6" /><meta><lastUpdated value="2024-11-15T15:27:51.2340428+00:00" /><profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" /></meta><name value="LungHealth" /><contact><telecom><system value="email" /><value value="Test@test.com" /></telecom></contact></Organization></resource></entry></Bundle>
+
+
+************ END OF INBOUND MESSAGE **************
+
+there is not sufficient data regarding the type of message eventCode is missing or cannot be understood
+
+MeshMessage timeout period has expired @ Fri Nov 15 15:30:03 UTC 2024 with id = 
+
